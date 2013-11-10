@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  #build
+    h1#build-name
+    #build-status
+    #build-info
+      p Project:
+        span#build-project
+      p Definition:
+        span#build-definition
+      p Requested By:
+        span#build-requestedby
+
+  script.
+    // socket.io specific code
+    var socket = io.connect();
+    socket.on('build update', function(data) {
+      $('#build-name').text(data.Number);
+      $('#build-status').text(data.Status);
+      $('#build-project').text(data.Project);
+      $('#build-definition').text(data.Definition);
+      $('#build-requestedby').text(data.RequestedBy);
+    });
