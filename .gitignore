@@ -2,3 +2,4 @@ local_package.csx
 node_modules
 azure.err
 *.publishsettings
+cloud_package.cspkg
