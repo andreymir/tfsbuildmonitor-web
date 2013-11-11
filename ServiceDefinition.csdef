@@ -8,11 +8,14 @@
             <RoleInstanceValue xpath="/RoleEnvironment/Deployment/@emulated" />
           </Variable>
           <Variable name="RUNTIMEID" value="node" />
-          <Variable name="RUNTIMEURL" value="http://az413943.vo.msecnd.net/node/0.6.20.exe" />
+          <Variable name="RUNTIMEURL" value="http://az413943.vo.msecnd.net/node/0.10.21.exe" />
         </Environment>
       </Task>
       <Task commandLine="node.cmd .\startup.js" executionContext="elevated" />
     </Startup>
+    <ConfigurationSettings>
+      <Setting name="odatatfs" />
+    </ConfigurationSettings>
     <Endpoints>
       <InputEndpoint name="HttpIn" protocol="tcp" port="80" />
     </Endpoints>

@@ -1,1 +1,1 @@
-{"name":"tfsbuildmonitor","version":"0.0.1","description":"TFS build monitor web app","private":true,"scripts":{"start":"node app.js"},"dependencies":{"express":"*","jade":"*","socket.io":"*"},"author":"Andrey Mironov","engines":{"node":"0.6.20"}}
+{"name":"tfsbuildmonitor","version":"0.0.1","description":"TFS build monitor web app","private":true,"scripts":{"start":"node app.js"},"dependencies":{"express":"*","jade":"*","socket.io":"*","azure":"*"},"author":"Andrey Mironov","engines":{"node":"0.10.21"}}
